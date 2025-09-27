@@ -1,0 +1,36 @@
+.list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 300px;
+  margin-top: 30px;
+}
+
+.item {
+  flex-basis: calc((100% - 40px) / 5);
+  height: 200px;
+  border: 1px solid black;
+  padding: 5px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  transition: transform 0.4s;
+
+  &:hover {
+    transform: translate(-7px, -7px);
+  }
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+  color: black;
+}
+
+.text {
+  text-align: center;
+}
